@@ -40,7 +40,7 @@ class myQueue (object):
 		return self.stack2[-1]
 
 
-    # Returs a tuple the lengths of stack 1 and 2 respectively 
+    # Returs a tuple with the lengths of stack 1 and 2 respectively 
 	def size (self):
 		return len(self.stack1), len(self.stack2)
 
