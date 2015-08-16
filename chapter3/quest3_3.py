@@ -27,6 +27,9 @@ class SetOfStacks (object):
 		self.rank = 0
 		self.table = -1
 
+		# this will turn True if we pop at a random stack 
+		self.poppedAt = False
+
 	def push (self, data):
 		index = self.getIndex()
 		if index == 0:
@@ -49,6 +52,11 @@ class SetOfStacks (object):
 		self.rank -= 1
 
 		return poppedVal
+
+	def popAt (self, index):
+		# IN PROGRESS
+		pass
+		
 
 
 

@@ -16,11 +16,11 @@ def getMinPath (node):
 	if node is None:
 		return 0
 	else:
-		return min(node.lChild, node.rChild) + 1
+		return min(node.leftChild, node.rightChild) + 1
 
 # Gets the maximym path from a certain subtreee
 def getMaxPath (node):
 	if node is None:
 		return 0
 	else:
-		return max(node.lChild, node.rChild) + 1
+		return max(node.leftChild, node.rightChild) + 1

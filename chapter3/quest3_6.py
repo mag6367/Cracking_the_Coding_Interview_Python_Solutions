@@ -11,6 +11,7 @@ from stack import Stack
 
 def sortStack (stack):
 	newStack = Stack()
+	
 	while not stack.isEmpty():
 		temp = stack.pop()
 		while not newStack.isEmpty() and newStack.peek() > temp:
