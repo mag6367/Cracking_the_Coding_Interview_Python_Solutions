@@ -10,12 +10,10 @@ def areAnagram (str1, str2):
 		return False
 
 	# first we convert the two strings into lists and sort them
-	newStr1 = list(str1)
-	newStr1.sort()
+	newStr1 = sorted(str1)
+	newStr2 = sorted(str2)
 
-	newStr2 = list(str2)
-	newStr2.sort()
-
+	
 	# if they are anagrams, the lists should be identical
 	return newStr1 == newStr2
 
